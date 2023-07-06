@@ -1,0 +1,84 @@
+Node Js-Server side
+
+**Steps to create a nodejs server using express
+ 1.create a server folder
+ 2.create a package.json file:npm init
+ 3.install express json
+   --command for installing express:npm i express
+ 4.create entry point of our application by creating index.js file  
+ 5.import express.js in index.js file
+ 6.create  a server app using express in index.js
+ 7.enable cross origin resporce sharing in server app using cors protocol.
+   -cors:cross origin resource sharing
+   --install the cors in project folder
+   --command:npm i cors
+   --import cors in index.js file  
+   --using cors specify origin to server app that should share data
+8.use json parser in server application
+9.set up port number for server app so that it will be available in network
+10.run the server application:run your index.js file
+  --command:node index.js
+11.how node resolve http request
+   --GET:
+   --POST
+   server.post('url',(req,res)=>{
+    to check whether request reached in the backend try this::
+    console.log('reached the backend')
+    to see the body of the request::
+    console.log(req.body)
+    to send response to the user::
+    res.send('success')
+   })
+
+
+
+
+        MONGODB:Store data permanenetly
+
+1.create database for the server
+2.create collections to store data
+3. how to name collections:
+    --allcharacters should be small letters
+    --it should be plural one
+4.we need to decide which all are the fields should be created inside the collections
+   eg:accountnumber,password,username  
+
+5.to communicate with mongodb and node,node use mongoose library
+====.to install mongoose ,we need to install mongoose.the command:npm i mongoose
+====.to specify the connections in mongodb,we create  a new folder and inside we will create db.js file to define connection with mongodb and node using mongoose
+====.we have to import mongoose in db.js
+====.we have to define connection string btw node and mongodb  using mongoose.
+----to do that follow the step:  
+    ======inside db.js,
+               ---mongoose.connect('url of mongodb/database-name')
+====to create a model using mongoose to store document/data
+       ---convention for creating model
+         ---first letter should be in capital letter
+         ---it shoul be a singular word
+====After creating the module,we need to export it 
+    ---syntax:module.exports={
+      module name
+    }         
+-----------------THIS IS THE END OF CONNECTION ----------
+
+
+
+6.How to resolve front end request
+
+
+
+
+
+2.
+3.generate token =sign() when login successfull
+4.Create router specific 
+5.verify token-verify():
+
+
+======git edited===
+git status
+git add .
+git commit origin "engine added"
+git push origin ....
+rendering refers to the visualization of a project.
+=================
